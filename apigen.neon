@@ -9,6 +9,7 @@ exclude:
 # Main project name prefix
 main: Framework Simple
 # Title of generated documentation
-title: Framework Simple PHP Documentation
+title: Framework Simple
 accessLevels : 'public,protected,private'
-templateConfig: php_docs_template/config.neon
+templateConfig: public_html/php_docs_template/config.neon
+tree: false
