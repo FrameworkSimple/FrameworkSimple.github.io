@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Core | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Controller.html">Core_Controller</a></li>
+				<li class="active"><a href="class-Core_Core.html">Core_Core</a></li>
+				<li><a href="class-Core_Database.html">Core_Database</a></li>
+				<li><a href="class-Core_Debug.html">Core_Debug</a></li>
+				<li><a href="class-Core_Model.html">Core_Model</a></li>
+				<li><a href="class-Core_ORM.html">Core_ORM</a></li>
+				<li><a href="class-Core_Validation.html">Core_Validation</a></li>
+			</ul>
+
+
+
+
+			<h3>Constants</h3>
+			<ul>
+				<li><a href="constant-AJAX_RETURN_TYPE.html">AJAX_RETURN_TYPE</a></li>
+				<li><a href="constant-AUTH.html">AUTH</a></li>
+				<li><a href="constant-AUTH_PASSWORD_FIELD.html">AUTH_PASSWORD_FIELD</a></li>
+				<li><a href="constant-AUTH_REDIRECT_ACTION.html">AUTH_REDIRECT_ACTION</a></li>
+				<li><a href="constant-AUTH_REDIRECT_CONTROLLER.html">AUTH_REDIRECT_CONTROLLER</a></li>
+				<li><a href="constant-AUTH_TABLE.html">AUTH_TABLE</a></li>
+				<li><a href="constant-AUTH_USERNAME_FIELD.html">AUTH_USERNAME_FIELD</a></li>
+				<li><a href="constant-AUTO_RENDER.html">AUTO_RENDER</a></li>
+				<li><a href="constant-DB_HOSTNAME.html">DB_HOSTNAME</a></li>
+				<li><a href="constant-DB_NAME.html">DB_NAME</a></li>
+				<li><a href="constant-DB_PASSWORD.html">DB_PASSWORD</a></li>
+				<li><a href="constant-DB_USERNAME.html">DB_USERNAME</a></li>
+				<li><a href="constant-DEBUG.html">DEBUG</a></li>
+				<li><a href="constant-DEFAULT_ACTION.html">DEFAULT_ACTION</a></li>
+				<li><a href="constant-DEFAULT_CONTROLLER.html">DEFAULT_CONTROLLER</a></li>
+				<li><a href="constant-DEFAULT_LAYOUT.html">DEFAULT_LAYOUT</a></li>
+				<li><a href="constant-DEFAULT_VIEW_TYPE.html">DEFAULT_VIEW_TYPE</a></li>
+				<li><a href="constant-LAYOUTS.html">LAYOUTS</a></li>
+				<li><a href="constant-REST.html">REST</a></li>
+				<li><a href="constant-SALT.html">SALT</a></li>
+				<li><a href="constant-SESSION.html">SESSION</a></li>
+				<li><a href="constant-TITLE.html">TITLE</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Core</h1>
+
+
+	<div class="description">
+	
+<p>This is all the basic functions of the framework. Including: Autoloading,
+running the framework and utilities</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a><br>
+
+				<b>Category:</b>
+				Core<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Core.html#7-643" title="Go to source code">system/Core/Core.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="autoLoader" id="_autoLoader">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_autoLoader">#</a>
+			<code><a href="source-class-Core_Core.html#88-125" title="Go to source code">autoLoader</a>( <span>string <var>$class_name</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Autoload Classes using the name of the class</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Autoload Classes using the name of the class</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$class_name</var></dt>
+						<dd><code>string</code><br>$classname Name of the string to autoload</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="run" id="_run">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_run">#</a>
+			<code><a href="source-class-Core_Core.html#127-251" title="Go to source code">run</a>( )</code>
+
+			<div class="description short">
+				
+<p>Run the framework.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Run the framework.</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_getUrl" id="__getUrl">
+
+			<td class="attributes"><code>
+				 private static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__getUrl">#</a>
+			<code><a href="source-class-Core_Core.html#253-368" title="Go to source code">_getUrl</a>( )</code>
+
+			<div class="description short">
+				
+<p>Find the Controller, Action and Params from the url that was called</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Find the Controller, Action and Params from the url that was called</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_checkRoutes" id="__checkRoutes">
+
+			<td class="attributes"><code>
+				 private static
+				Boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__checkRoutes">#</a>
+			<code><a href="source-class-Core_Core.html#370-457" title="Go to source code">_checkRoutes</a>( <span>array <var>$request</var></span>, <span>string <var>$method</var></span> )</code>
+
+			<div class="description short">
+				
+<p>check to see if the request is the routes</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>check to see if the request is the routes</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$request</var></dt>
+						<dd><code>array</code><br>$request the information that came through the url</dd>
+						<dt><var>$method</var></dt>
+						<dd><code>string</code><br>$method the method that called this page</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>Boolean</code><br>if the request was in the routes<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_setAction" id="__setAction">
+
+			<td class="attributes"><code>
+				 private static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__setAction">#</a>
+			<code><a href="source-class-Core_Core.html#460-486" title="Go to source code">_setAction</a>( <span>string <var>$method</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Set the action to either the rest or the default depending on settings</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Set the action to either the rest or the default depending on settings</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$method</var></dt>
+						<dd><code>string</code><br>$method the method that called this page</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="instantiate" id="_instantiate">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_instantiate">#</a>
+			<code><a href="source-class-Core_Core.html#489-520" title="Go to source code">instantiate</a>( <span>string <var>$classname</var></span> )</code>
+
+			<div class="description short">
+				
+<p>instantiate classes for user</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>instantiate classes for user</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$classname</var></dt>
+						<dd><code>string</code><br>$classname the name of the class to instatinate</dd>
+					</dl></div>
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="error" id="_error">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_error">#</a>
+			<code><a href="source-class-Core_Core.html#522-545" title="Go to source code">error</a>( <span>mixed <var>$message</var></span>, <span>mixed <var>$level</var> = E_USER_NOTICE</span>, <span>mixed <var>$header</var> = <span class="php-quote">'404'</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="redirect" id="_redirect">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_redirect">#</a>
+			<code><a href="source-class-Core_Core.html#547-570" title="Go to source code">redirect</a>( <span>string <var>$controller</var></span>, <span>string <var>$action</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Redirect to a different location</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Redirect to a different location</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$controller</var></dt>
+						<dd><code>string</code><br>$controller the controller name</dd>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action the action name</dd>
+						<dt><var>$params</var></dt>
+						<dd><code>array</code><br>$params the params to pass to the new url</dd>
+					</dl></div>
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="encrypt" id="_encrypt">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_encrypt">#</a>
+			<code><a href="source-class-Core_Core.html#572-589" title="Go to source code">encrypt</a>( <span>string <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>encrypt sensitive data using this function</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>encrypt sensitive data using this function</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>$value string you want to encrypt</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>The encrypted string<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toDb" id="_toDb">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toDb">#</a>
+			<code><a href="source-class-Core_Core.html#592-602" title="Go to source code">toDb</a>( <span>string <var>$string</var></span> )</code>
+
+			<div class="description short">
+				
+<p>split on caps, add underscores and then convert it to lowercase</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>split on caps, add underscores and then convert it to lowercase</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd><code>string</code><br>$string the string to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the converted string<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toNorm" id="_toNorm">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toNorm">#</a>
+			<code><a href="source-class-Core_Core.html#605-615" title="Go to source code">toNorm</a>( <span>string <var>$string</var></span> )</code>
+
+			<div class="description short">
+				
+<p>replace underscores with spaces and capitalize first letter</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>replace underscores with spaces and capitalize first letter</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd><code>string</code><br>$string the string to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the converted string<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toCam" id="_toCam">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toCam">#</a>
+			<code><a href="source-class-Core_Core.html#618-629" title="Go to source code">toCam</a>( <span>string <var>$string</var></span> )</code>
+
+			<div class="description short">
+				
+<p>find the underscores and convert the following letter to and uppercase</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>find the underscores and convert the following letter to and uppercase</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd><code>string</code><br>$string the string to convert</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the converted string<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addNamespace" id="_addNamespace">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addNamespace">#</a>
+			<code><a href="source-class-Core_Core.html#632-642" title="Go to source code">addNamespace</a>( <span>string <var>$namespace</var></span> )</code>
+
+			<div class="description short">
+				
+<p>add classes to be autoloaded</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>add classes to be autoloaded</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$namespace</var></dt>
+						<dd><code>string</code><br>$folder the folder name</dd>
+					</dl></div>
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="instantiated" id="$instantiated">
+			<td class="attributes"><code>
+				private static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#17-26" title="Go to source code"><var>$instantiated</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$instantiated" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>instantiated: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>instantiated: array</p>
+
+<p>The classes that have been instantiated</p>
+
+<p>This will be an array of objects holding all the of classes that have ever
+been instantiated in this run</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="debug" id="$debug">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#28-41" title="Go to source code"><var>$debug</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$debug" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>debug: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>debug: array</p>
+
+<p>All the debug information</p>
+
+<p>this holds all the sequal statements that ran, all the names of the classes
+that were instantiated, all the information from the url, and all the views that
+were rendered.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="extensions" id="$extensions">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#43-50" title="Go to source code"><var>$extensions</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$extensions" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>extensions: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>extensions: array</p>
+
+<p>What extensions to include</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="routes" id="$routes">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#52-60" title="Go to source code"><var>$routes</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$routes" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>routes: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>routes: array</p>
+
+<p>routes for the framework</p>
+
+<p>holds all the various dynamic routes for each application</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="info_of_url" id="$info_of_url">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#62-75" title="Go to source code"><var>$info_of_url</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$info_of_url" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Info of URL: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Info of URL: array</p>
+
+<p>This will hold all the url information</p>
+
+<p>Controller: name of the controller to go to</p>
+
+<p>Action: name of the action to run</p>
+
+<p>Params: array of params to pass to action</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="redirect" id="$redirect">
+			<td class="attributes"><code>
+				public static 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#77-84" title="Go to source code"><var>$redirect</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$redirect" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Redirect: boolean</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Redirect: boolean</p>
+
+<p>Allow the core to redirect pages.</p>
+
+<p>Can be turned off for testing purposes.</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="namespaces" id="$namespaces">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Core.html#86" title="Go to source code"><var>$namespaces</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$namespaces" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

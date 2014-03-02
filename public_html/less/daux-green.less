@@ -1,0 +1,81 @@
+//Daux.io Green
+@sidebar-background: #e1efc8;
+@sidebar-hover:  #98c742;
+@lines:  #f3f3f3;
+@dark: #555;
+@light: #f3f3f3;
+@text: #2d2d2d;
+@syntax-string: #759933;
+@syntax-comment: #333;
+@syntax-number: #98c742;
+@syntax-label: #98c742;
+
+@active: #98c742;
+@syntax-text: #98c742;
+
+
+@gray: #777777;
+@mid-gray: #A1A1A1;
+@light-gray: #f3f3f3;
+
+@green: #98c742;
+@light-green: #e1efc8;
+@dark-green: #759933;
+
+@red: #c74242;
+@light-red: #f4d9d9;
+
+@white: #fff;
+
+.help {
+
+	color: @dark;
+	font-size: 12px;
+	position: relative;
+	top: -2px;
+	left: 5px;
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	text-align: center;
+	font-weight: 700;
+	font-family: 'Times New Roman', serif;
+	background-color: @sidebar-background;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+	border: 1px solid $green;
+	cursor: help;
+
+	span
+	{
+
+		margin-left: -999em;
+		position: absolute;
+	}
+	&:hover{
+
+		text-decoration: none;
+
+		span {
+
+			font-family: 'Cabin Condensed', sans-serif;
+			font-weight: 400;
+			top: 1em;
+			left: 1em;
+			margin: 0;
+			width: 900%;
+			background-color: @sidebar-background;
+			color: @dark;
+			padding: 10px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			-webkit-box-shadow: 1px 1px 3px $green;
+			-moz-box-shadow: 1px 1px 3px $green;
+			box-shadow: 1px 1px 3px $green;
+		}
+	}
+}
+
+@import "import/daux-base.less";

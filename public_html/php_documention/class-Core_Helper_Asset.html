@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Helper_Asset | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.Helpers.html" title="Summary of Core\Helpers"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Core_Helper_Asset.html">Core_Helper_Asset</a></li>
+				<li><a href="class-Core_Helper_Auth.html">Core_Helper_Auth</a></li>
+				<li><a href="class-Core_Helper_Hook.html">Core_Helper_Hook</a></li>
+				<li><a href="class-Core_Helper_Session.html">Core_Helper_Session</a></li>
+				<li><a href="class-Core_Helper_View.html">Core_Helper_View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Helper_Asset</h1>
+
+
+	<div class="description">
+	
+<p>This handles the asset pipeline and loading in various assets</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a>\<a href="package-Core.Helpers.html">Helpers</a><br>
+
+				<b>Category:</b>
+				Helpers<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Helper_Asset.html#7-355" title="Go to source code">system/Core/Helper/Asset.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="getbase" id="_getbase">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getbase">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#35-62" title="Go to source code">getbase</a>( )</code>
+
+			<div class="description short">
+				
+<p>get the base url so we know the root for assets</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>get the base url so we know the root for assets</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the base url<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="relativeurl" id="_relativeurl">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_relativeurl">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#64-76" title="Go to source code">relativeurl</a>( )</code>
+
+			<div class="description short">
+				
+<p>Get the url path relative to the webroot</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Get the url path relative to the webroot</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the relative url<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="createurl" id="_createurl">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createurl">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#77-169" title="Go to source code">createurl</a>( <span>string <var>$controller</var></span>, <span>string <var>$action</var> = <span class="php-quote">''</span></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>used for routing to create urls to content dynamically
+Asset::createUrl("controller","action",array(1));</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>used for routing to create urls to content dynamically
+Asset::createUrl("controller","action",array(1));</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$controller</var></dt>
+						<dd><code>string</code><br>$controller the controller you want to target</dd>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action the action you want to target</dd>
+						<dt><var>$params</var></dt>
+						<dd><code>array</code><br>$params the params you want to pass</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>to controller/action/params<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="css" id="_css">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_css">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#171-182" title="Go to source code">css</a>( <span>array <var>$stylesheets</var></span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Create css link tags</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Create css link tags</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$stylesheets</var></dt>
+						<dd><code>array</code><br>$stylesheets names of stylesheets you want to include with any attributes</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>$attr attributes you want applied to all stylesheets</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>link tags to the stylesheets<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="js" id="_js">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_js">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#184-195" title="Go to source code">js</a>( <span>array <var>$scripts</var></span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>create js script tags</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create js script tags</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$scripts</var></dt>
+						<dd><code>array</code><br>$scripts names of scripts you want to include with any atrributes</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>$attr attributes you want applied to all scripts</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>script tags to the javascript files<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="img" id="_img">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_img">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#197-208" title="Go to source code">img</a>( <span>string <var>$imgs</var></span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>create an image tag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create an image tag</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$imgs</var></dt>
+						<dd><code>string</code><br>$imgs the name of the image you want to include</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>$attr attributes you want applied to the image tag</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>img tag to the image<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="create" id="_create">
+
+			<td class="attributes"><code>
+				 private static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_create">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#210-289" title="Go to source code">create</a>( <span>string <var>$type</var></span>, <span>array <var>$items</var></span>, <span>array <var>$attrs</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>create an html tag for scripts, links and imgs.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create an html tag for scripts, links and imgs.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$type</var></dt>
+						<dd><code>string</code><br>$type type of tag you want to create</dd>
+						<dt><var>$items</var></dt>
+						<dd><code>array</code><br>$items the items you want created</dd>
+						<dt><var>$attrs</var></dt>
+						<dd><code>array</code><br>$attrs attributes you want applied to all of the tags</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the tags that were created<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_htmltag" id="__htmltag">
+
+			<td class="attributes"><code>
+				 private static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__htmltag">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#291-314" title="Go to source code">_htmltag</a>( <span>string <var>$tag</var></span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span>()</span>, <span>boolean/string <var>$content</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>create an html tag</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create an html tag</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tag</var></dt>
+						<dd><code>string</code><br>$tag the tag you want to create</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>$attr the attributes you want applied</dd>
+						<dt><var>$content</var></dt>
+						<dd><code>boolean/string</code><br>$content any content you want inside the tag, default = false</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the html tag<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_arraytoattr" id="__arraytoattr">
+
+			<td class="attributes"><code>
+				 private static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__arraytoattr">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#316-336" title="Go to source code">_arraytoattr</a>( <span>array <var>$attr</var></span> )</code>
+
+			<div class="description short">
+				
+<p>convert and array of attributes to a string</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>convert and array of attributes to a string</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>$attr an array of attributes</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>a string of attributes<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="json" id="_json">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_json">#</a>
+			<code><a href="source-class-Core_Helper_Asset.html#338-354" title="Go to source code">json</a>( <span>array <var>$object</var></span>, <span>mixed <var>$echo</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				
+<p>json encode and echo out object for json view</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>json encode and echo out object for json view</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$object</var></dt>
+						<dd><code>array</code><br>$object the array to encode</dd>
+						<dt><var>$echo</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="paths" id="$paths">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Helper_Asset.html#18-33" title="Go to source code"><var>$paths</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$paths" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>paths: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>paths: array</p>
+
+<p>default paths for assets</p>
+
+<p>css =&gt; 'css/' js =&gt; 'js/' img =&gt; 'img/'</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

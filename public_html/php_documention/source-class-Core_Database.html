@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+	<meta name="robots" content="noindex">
+
+	<title>File system/Core/Database.php | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li>
+							<a href="class-Core_Database.html" title="Summary of Core_Database"><span>Class</span></a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Controller.html">Core_Controller</a></li>
+				<li><a href="class-Core_Core.html">Core_Core</a></li>
+				<li class="active"><a href="class-Core_Database.html">Core_Database</a></li>
+				<li><a href="class-Core_Debug.html">Core_Debug</a></li>
+				<li><a href="class-Core_Model.html">Core_Model</a></li>
+				<li><a href="class-Core_ORM.html">Core_ORM</a></li>
+				<li><a href="class-Core_Validation.html">Core_Validation</a></li>
+			</ul>
+
+
+
+
+			<h3>Constants</h3>
+			<ul>
+				<li><a href="constant-AJAX_RETURN_TYPE.html">AJAX_RETURN_TYPE</a></li>
+				<li><a href="constant-AUTH.html">AUTH</a></li>
+				<li><a href="constant-AUTH_PASSWORD_FIELD.html">AUTH_PASSWORD_FIELD</a></li>
+				<li><a href="constant-AUTH_REDIRECT_ACTION.html">AUTH_REDIRECT_ACTION</a></li>
+				<li><a href="constant-AUTH_REDIRECT_CONTROLLER.html">AUTH_REDIRECT_CONTROLLER</a></li>
+				<li><a href="constant-AUTH_TABLE.html">AUTH_TABLE</a></li>
+				<li><a href="constant-AUTH_USERNAME_FIELD.html">AUTH_USERNAME_FIELD</a></li>
+				<li><a href="constant-AUTO_RENDER.html">AUTO_RENDER</a></li>
+				<li><a href="constant-DB_HOSTNAME.html">DB_HOSTNAME</a></li>
+				<li><a href="constant-DB_NAME.html">DB_NAME</a></li>
+				<li><a href="constant-DB_PASSWORD.html">DB_PASSWORD</a></li>
+				<li><a href="constant-DB_USERNAME.html">DB_USERNAME</a></li>
+				<li><a href="constant-DEBUG.html">DEBUG</a></li>
+				<li><a href="constant-DEFAULT_ACTION.html">DEFAULT_ACTION</a></li>
+				<li><a href="constant-DEFAULT_CONTROLLER.html">DEFAULT_CONTROLLER</a></li>
+				<li><a href="constant-DEFAULT_LAYOUT.html">DEFAULT_LAYOUT</a></li>
+				<li><a href="constant-DEFAULT_VIEW_TYPE.html">DEFAULT_VIEW_TYPE</a></li>
+				<li><a href="constant-LAYOUTS.html">LAYOUTS</a></li>
+				<li><a href="constant-REST.html">REST</a></li>
+				<li><a href="constant-SALT.html">SALT</a></li>
+				<li><a href="constant-SESSION.html">SESSION</a></li>
+				<li><a href="constant-TITLE.html">TITLE</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<pre id="source"><code><span id="1" class="l"><a class="l" href="#1"> 1 </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2 </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3"> 3 </a><span class="php-comment"> * Holds all the information for the database
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4 </a><span class="php-comment"> */</span>
+</span><span id="5" class="l"><a class="l" href="#5"> 5 </a>
+</span><span id="6" class="l"><a class="l" href="#6"> 6 </a><span class="php-comment">/**
+</span></span><span id="7" class="l"><a class="l" href="#7"> 7 </a><span class="php-comment"> * This is all the database information
+</span></span><span id="8" class="l"><a class="l" href="#8"> 8 </a><span class="php-comment"> *
+</span></span><span id="9" class="l"><a class="l" href="#9"> 9 </a><span class="php-comment"> * Creates the pdo for the sql database
+</span></span><span id="10" class="l"><a class="l" href="#10">10 </a><span class="php-comment"> *
+</span></span><span id="11" class="l"><a class="l" href="#11">11 </a><span class="php-comment"> * @category   Core
+</span></span><span id="12" class="l"><a class="l" href="#12">12 </a><span class="php-comment"> * @package    Core
+</span></span><span id="13" class="l"><a class="l" href="#13">13 </a><span class="php-comment"> * @author     Rachel Higley &lt;me@rachelhigley.com&gt;
+</span></span><span id="14" class="l"><a class="l" href="#14">14 </a><span class="php-comment"> * @copyright  2013 Framework Simple
+</span></span><span id="15" class="l"><a class="l" href="#15">15 </a><span class="php-comment"> * @license    http://www.opensource.org/licenses/mit-license.php MIT
+</span></span><span id="16" class="l"><a class="l" href="#16">16 </a><span class="php-comment"> * @link       http://rachelhigley.com/framework
+</span></span><span id="17" class="l"><a class="l" href="#17">17 </a><span class="php-comment"> */</span>
+</span><span id="18" class="l"><a class="l" href="#18">18 </a><span class="php-keyword1">class</span> <a id="Core_Database" href="#Core_Database">Core_Database</a> {
+</span><span id="19" class="l"><a class="l" href="#19">19 </a>    <span class="php-comment">/**
+</span></span><span id="20" class="l"><a class="l" href="#20">20 </a><span class="php-comment">     * db
+</span></span><span id="21" class="l"><a class="l" href="#21">21 </a><span class="php-comment">     *
+</span></span><span id="22" class="l"><a class="l" href="#22">22 </a><span class="php-comment">     * The database PDO
+</span></span><span id="23" class="l"><a class="l" href="#23">23 </a><span class="php-comment">     *
+</span></span><span id="24" class="l"><a class="l" href="#24">24 </a><span class="php-comment">     * @var PDO
+</span></span><span id="25" class="l"><a class="l" href="#25">25 </a><span class="php-comment">     */</span>
+</span><span id="26" class="l"><a class="l" href="#26">26 </a>    <span class="php-keyword1">public</span> <span class="php-var"><a id="$db" href="#$db">$db</a></span> = <span class="php-keyword1">NULL</span>;
+</span><span id="27" class="l"><a class="l" href="#27">27 </a>    <span class="php-comment">/**
+</span></span><span id="28" class="l"><a class="l" href="#28">28 </a><span class="php-comment">     * tables: array
+</span></span><span id="29" class="l"><a class="l" href="#29">29 </a><span class="php-comment">     *
+</span></span><span id="30" class="l"><a class="l" href="#30">30 </a><span class="php-comment">     * the tables that are in the database
+</span></span><span id="31" class="l"><a class="l" href="#31">31 </a><span class="php-comment">     *
+</span></span><span id="32" class="l"><a class="l" href="#32">32 </a><span class="php-comment">     * @var tables
+</span></span><span id="33" class="l"><a class="l" href="#33">33 </a><span class="php-comment">     */</span>
+</span><span id="34" class="l"><a class="l" href="#34">34 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-var"><a id="$tables" href="#$tables">$tables</a></span>;
+</span><span id="35" class="l"><a class="l" href="#35">35 </a>
+</span><span id="36" class="l"><a class="l" href="#36">36 </a>    <span class="php-comment">/**
+</span></span><span id="37" class="l"><a class="l" href="#37">37 </a><span class="php-comment">     * Set up PDO
+</span></span><span id="38" class="l"><a class="l" href="#38">38 </a><span class="php-comment">     */</span>
+</span><span id="39" class="l"><a class="l" href="#39">39 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="__construct" href="#__construct">_construct</a>() {
+</span><span id="40" class="l"><a class="l" href="#40">40 </a>        <span class="php-var">$this</span> -&gt; db = <span class="php-keyword1">new</span> \PDO(<span class="php-quote">&quot;mysql:hostname=&quot;</span>.DB_HOSTNAME.<span class="php-quote">&quot;;dbname=&quot;</span>.DB_NAME,DB_USERNAME,DB_PASSWORD);
+</span><span id="41" class="l"><a class="l" href="#41">41 </a>        <span class="php-var">$this</span> -&gt; db -&gt; setAttribute(\PDO::ATTR_DEFAULT_FETCH_MODE, \PDO::FETCH_ASSOC);
+</span><span id="42" class="l"><a class="l" href="#42">42 </a>        <span class="php-var">$this</span> -&gt; db -&gt; setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_SILENT);
+</span><span id="43" class="l"><a class="l" href="#43">43 </a>
+</span><span id="44" class="l"><a class="l" href="#44">44 </a>    }
+</span><span id="45" class="l"><a class="l" href="#45">45 </a></span>}</code></pre>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

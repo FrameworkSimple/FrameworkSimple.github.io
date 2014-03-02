@@ -1,0 +1,12 @@
+{
+	"title": "Framework Simple",
+	"tagline": "Only the Files You Need",
+	"docs_path": "docs",
+	"image": "images/logo.png",
+	"theme": "green",
+	"template":"default",
+	"float": false,
+	"date_modified": false,
+	"repo": "rachelhigley/Framework-Simple",
+	"twitter": ["rachelhigley", "FrameworkSimple"]
+}

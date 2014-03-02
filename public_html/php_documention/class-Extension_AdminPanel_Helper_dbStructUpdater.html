@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Extension_AdminPanel_Helper_dbStructUpdater | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Extensions.AdminPanel.html" title="Summary of Extensions\AdminPanel"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li class="active"><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Extension_AdminPanel_Controller_AdminPanel.html">Extension_AdminPanel_Controller_AdminPanel</a></li>
+				<li><a href="class-Extension_AdminPanel_Controller_AdminPanelMigrations.html">Extension_AdminPanel_Controller_AdminPanelMigrations</a></li>
+				<li><a href="class-Extension_AdminPanel_Controller_AdminPanelScaffolding.html">Extension_AdminPanel_Controller_AdminPanelScaffolding</a></li>
+				<li><a href="class-Extension_AdminPanel_Controller_AdminPanelSettings.html">Extension_AdminPanel_Controller_AdminPanelSettings</a></li>
+				<li><a href="class-Extension_AdminPanel_Controller_AdminPanelUser.html">Extension_AdminPanel_Controller_AdminPanelUser</a></li>
+				<li class="active"><a href="class-Extension_AdminPanel_Helper_dbStructUpdater.html">Extension_AdminPanel_Helper_dbStructUpdater</a></li>
+				<li><a href="class-Extension_AdminPanel_Models_Tables.html">Extension_AdminPanel_Models_Tables</a></li>
+			</ul>
+
+
+
+
+			<h3>Constants</h3>
+			<ul>
+				<li><a href="constant-ADMIN_PASSWORD.html">ADMIN_PASSWORD</a></li>
+				<li><a href="constant-ADMIN_USERNAME.html">ADMIN_USERNAME</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Extension_AdminPanel_Helper_dbStructUpdater</h1>
+
+
+	<div class="description">
+	
+<p>The class provides ability to compare 2 database structure dumps and compile
+a set of sql statements to update one database to make it structure identical to
+another.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Extensions.html">Extensions</a>\<a href="package-Extensions.AdminPanel.html">AdminPanel</a><br>
+
+				<b>Category:</b>
+				Extensions<br>
+				<b>Author:</b>
+				Kirill Gerasimenko &lt;<a
+href="mailto:ger.kirill&#64;gmail.com">ger.kirill&#64;<!-- -->gmail.com</a>&gt;<br>
+		<b>Located at</b> <a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#16-771" title="Go to source code">system/Extension/AdminPanel/Helper/DBStruct.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="dbstructupdater" id="_dbstructupdater">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_dbstructupdater">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#62-69" title="Go to source code">dbstructupdater</a>( )</code>
+
+			<div class="description short">
+				
+<p>Constructor</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Constructor</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="init" id="_init">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_init">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#71-85" title="Go to source code">init</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setconfig" id="_setconfig">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setconfig">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#87-97" title="Go to source code">setconfig</a>( <span>assoc_array <var>$config</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>merges current updater config with the given one</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>merges current updater config with the given one</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$config</var></dt>
+						<dd><code>assoc_array</code><br>$config new configuration values</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getupdates" id="_getupdates">
+
+			<td class="attributes"><code>
+				 public 
+				array|string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getupdates">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#99-126" title="Go to source code">getupdates</a>( <span>string <var>$source</var></span>, <span>string <var>$dest</var></span>, <span>boolean <var>$asString</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Returns array of update SQL with default options, $source, $dest - database
+structures</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Returns array of update SQL with default options, $source, $dest - database
+structures</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$source</var></dt>
+						<dd><code>string</code><br>$source structure dump of database to update</dd>
+						<dt><var>$dest</var></dt>
+						<dd><code>string</code><br>$dest structure dump of the reference database</dd>
+						<dt><var>$asString</var></dt>
+						<dd><code>boolean</code><br>$asString if true - result will be a string, otherwise - array</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array|string</code><br>update sql statements - in array or string (separated with ';')<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="filterdiffs" id="_filterdiffs">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_filterdiffs">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#128-186" title="Go to source code">filterdiffs</a>( <span>mixed <var>$compRes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Filters comparison result and lefts only sync actions allowed by
+'updateTypes' option</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Filters comparison result and lefts only sync actions allowed by
+'updateTypes' option</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getdiffinfo" id="_getdiffinfo">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getdiffinfo">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#188-215" title="Go to source code">getdiffinfo</a>( <span>mixed <var>$compRes</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Gets structured general info about the databases diff :
+array(sourceOrphans=&gt;array(...), destOrphans=&gt;array(...),
+different=&gt;array(...))</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Gets structured general info about the databases diff :
+array(sourceOrphans=&gt;array(...), destOrphans=&gt;array(...),
+different=&gt;array(...))</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="compare" id="_compare">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_compare">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#217-275" title="Go to source code">compare</a>( <span>string <var>$source</var></span>, <span>mixed <var>$dest</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Makes comparison of the given database structures, support some options</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Makes comparison of the given database structures, support some options</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$source</var></dt>
+						<dd><code>string</code><br>$source and $dest are strings - database tables structures</dd>
+						<dt><var>$dest</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>- table (array) - destOrphan (boolean) - sourceOrphan (boolean) - differs
+(array) OR (boolean) false if no diffs - <a href="array">0</a> - source (string)
+structure definition line in the out-of-date table - dest (string) structure
+definition line in the reference table - <a href="array">1</a> ...<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="gettablelist" id="_gettablelist">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_gettablelist">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#277-293" title="Go to source code">gettablelist</a>( <span>string <var>$struct</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Retrieves list of table names from the database structure dump</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieves list of table names from the database structure dump</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$struct</var></dt>
+						<dd><code>string</code><br>$struct database structure listing</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="gettabsql" id="_gettabsql">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_gettabsql">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#295-330" title="Go to source code">gettabsql</a>( <span>string <var>$struct</var></span>, <span>string <var>$tab</var></span>, <span>boolean <var>$removeDatabase</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Retrieves table structure definition from the database structure dump</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Retrieves table structure definition from the database structure dump</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$struct</var></dt>
+						<dd><code>string</code><br>$struct database structure listing</dd>
+						<dt><var>$tab</var></dt>
+						<dd><code>string</code><br>$tab table name</dd>
+						<dt><var>$removeDatabase</var></dt>
+						<dd><code>boolean</code><br>$removeDatabase - either to remove database name in "CREATE TABLE
+database.tab"-like declarations</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>table structure definition<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="splittabsql" id="_splittabsql">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_splittabsql">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#332-377" title="Go to source code">splittabsql</a>( <span>mixed <var>$sql</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Splits table sql into indexed array</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Splits table sql into indexed array</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="comparesql" id="_comparesql">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_comparesql">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#379-452" title="Go to source code">comparesql</a>( <span>sring <var>$sourceSql</var></span>, <span>sring <var>$destSql</var></span> )</code>
+
+			<div class="description short">
+				
+<p>returns array of fields or keys definitions that differs in the given tables
+structure</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>returns array of fields or keys definitions that differs in the given tables
+structure</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$sourceSql</var></dt>
+						<dd><code>sring</code><br>$sourceSql table structure</dd>
+						<dt><var>$destSql</var></dt>
+						<dd><code>sring</code><br>$destSql right table structure supports some $options</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>- [0] - source (string) out-of-date table field definition - dest (string)
+reference table field definition - [1]...<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="processline" id="_processline">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_processline">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#454-500" title="Go to source code">processline</a>( <span>string <var>$line</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Transforms table structure defnition line into key=&gt;value pair where the
+key is a string that uniquely defines field or key desribed</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Transforms table structure defnition line into key=&gt;value pair where the
+key is a string that uniquely defines field or key desribed</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$line</var></dt>
+						<dd><code>string</code><br>$line field definition string</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>array with single key=&gt;value pair as described in the description implements
+some options<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getdiffsql" id="_getdiffsql">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getdiffsql">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#502-569" title="Go to source code">getdiffsql</a>( <span>array <var>$diff</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Takes an output of compare() method to generate the set of sql needed to
+update source table to make it look as a destination one</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Takes an output of compare() method to generate the set of sql needed to
+update source table to make it look as a destination one</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$diff</var></dt>
+						<dd><code>array</code><br>$diff compare() method output</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>list of sql statements supports query generation options<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getactionsql" id="_getactionsql">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getactionsql">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#571-648" title="Go to source code">getactionsql</a>( <span>string <var>$action</var></span>, <span>string <var>$tab</var></span>, <span>string <var>$sql</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Compiles update sql</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Compiles update sql</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>$action - 'drop', 'add' or 'modify'</dd>
+						<dt><var>$tab</var></dt>
+						<dd><code>string</code><br>$tab table name</dd>
+						<dt><var>$sql</var></dt>
+						<dd><code>string</code><br>$sql definition of the element to change</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>update sql<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getdelimpos" id="_getdelimpos">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getdelimpos">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#650-735" title="Go to source code">getdelimpos</a>( <span>mixed <var>$string</var></span>, <span>mixed <var>$offset</var> = <span class="php-num">0</span></span>, <span>mixed <var>$delim</var> = <span class="php-quote">';'</span></span>, <span>mixed <var>$skipInBrackets</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Searches for the position of the next delimiter which is not inside string
+literal like 'this ; ' or like "this ; ".</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Searches for the position of the next delimiter which is not inside string
+literal like 'this ; ' or like "this ; ".</p>
+
+<p>Handles escaped \" and \'. Also handles sql comments. Actualy it is
+regex-based Finit State Machine (FSN)</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getdelimrpos" id="_getdelimrpos">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getdelimrpos">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#737-758" title="Go to source code">getdelimrpos</a>( <span>mixed <var>$string</var></span>, <span>mixed <var>$offset</var> = <span class="php-num">0</span></span>, <span>mixed <var>$delim</var> = <span class="php-quote">';'</span></span>, <span>mixed <var>$skipInBrackets</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>works the same as getDelimPos except returns position of the first occurence
+of the delimiter starting from the end of the string</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>works the same as getDelimPos except returns position of the first occurence
+of the delimiter starting from the end of the string</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="normalizestring" id="_normalizestring">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_normalizestring">#</a>
+			<code><a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#760-770" title="Go to source code">normalizestring</a>( <span>string <var>$str</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Converts string to lowercase and replaces repeated spaces with the single one
+- to be used for the comparison purposes only</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Converts string to lowercase and replaces repeated spaces with the single one
+- to be used for the comparison purposes only</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd><code>string</code><br>$str string to normaize</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="sourceStruct" id="$sourceStruct">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#58" title="Go to source code"><var>$sourceStruct</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$sourceStruct" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="destStruct" id="$destStruct">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#59" title="Go to source code"><var>$destStruct</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$destStruct" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="config" id="$config">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Extension_AdminPanel_Helper_dbStructUpdater.html#60" title="Go to source code"><var>$config</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$config" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

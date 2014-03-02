@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Helper_Hook | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.Helpers.html" title="Summary of Core\Helpers"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Helper_Asset.html">Core_Helper_Asset</a></li>
+				<li><a href="class-Core_Helper_Auth.html">Core_Helper_Auth</a></li>
+				<li class="active"><a href="class-Core_Helper_Hook.html">Core_Helper_Hook</a></li>
+				<li><a href="class-Core_Helper_Session.html">Core_Helper_Session</a></li>
+				<li><a href="class-Core_Helper_View.html">Core_Helper_View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Helper_Hook</h1>
+
+
+	<div class="description">
+	
+<p>This handles the ablitiy to call and register hooks.</p>
+
+<p>You can do this before certain methods in the framework.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a>\<a href="package-Core.Helpers.html">Helpers</a><br>
+
+				<b>Category:</b>
+				Helpers<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Helper_Hook.html#7-107" title="Go to source code">system/Core/Helper/Hook.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="call" id="_call">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_call">#</a>
+			<code><a href="source-class-Core_Helper_Hook.html#32-65" title="Go to source code">call</a>( <span>string <var>$hook</var></span>, <span>array <var>$args</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Call a hook at a specific point in the process.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Call a hook at a specific point in the process.</p>
+
+<p>This will call all the methods that were registered earlier</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hook</var></dt>
+						<dd><code>string</code><br>$hook the name of the hook to call</dd>
+						<dt><var>$args</var></dt>
+						<dd><code>array</code><br>$args any arguements you want to be passed to the methods</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>if the framework should continue running<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="register" id="_register">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_register">#</a>
+			<code><a href="source-class-Core_Helper_Hook.html#67-105" title="Go to source code">register</a>( <span>string <var>$hook</var></span>, <span>string <var>$function</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Register a hook to be called when the hook is called</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Register a hook to be called when the hook is called</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$hook</var></dt>
+						<dd><code>string</code><br>$hook name of the hook you want to be linked to</dd>
+						<dt><var>$function</var></dt>
+						<dd><code>string</code><br>$function the method you want called when hook is called</dd>
+					</dl></div>
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="hooks" id="$hooks">
+			<td class="attributes"><code>
+				private static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Helper_Hook.html#23-30" title="Go to source code"><var>$hooks</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$hooks" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>Hooks: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>Hooks: array</p>
+
+<p>an array of all the hooks that have been registered</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

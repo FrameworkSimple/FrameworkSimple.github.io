@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Helper_Auth | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.Helpers.html" title="Summary of Core\Helpers"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Helper_Asset.html">Core_Helper_Asset</a></li>
+				<li class="active"><a href="class-Core_Helper_Auth.html">Core_Helper_Auth</a></li>
+				<li><a href="class-Core_Helper_Hook.html">Core_Helper_Hook</a></li>
+				<li><a href="class-Core_Helper_Session.html">Core_Helper_Session</a></li>
+				<li><a href="class-Core_Helper_View.html">Core_Helper_View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Helper_Auth</h1>
+
+
+	<div class="description">
+	
+<p>This handles all the user authentication</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a>\<a href="package-Core.Helpers.html">Helpers</a><br>
+
+				<b>Category:</b>
+				Core<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Helper_Auth.html#6-203" title="Go to source code">system/Core/Helper/Auth.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="isauthorized" id="_isauthorized">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isauthorized">#</a>
+			<code><a href="source-class-Core_Helper_Auth.html#41-90" title="Go to source code">isauthorized</a>( )</code>
+
+			<div class="description short">
+				
+<p>check if you are authorized to be on this page</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>check if you are authorized to be on this page</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>if authorized<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="login" id="_login">
+
+			<td class="attributes"><code>
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_login">#</a>
+			<code><a href="source-class-Core_Helper_Auth.html#92-140" title="Go to source code">login</a>( <span>array <var>$user</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>log in a user</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>log in a user</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$user</var></dt>
+						<dd><code>array</code><br>$user all the user information</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>if logged in<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="logout" id="_logout">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_logout">#</a>
+			<code><a href="source-class-Core_Helper_Auth.html#142-153" title="Go to source code">logout</a>( )</code>
+
+			<div class="description short">
+				
+<p>log out a user</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>log out a user</p>
+
+
+
+
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="user" id="_user">
+
+			<td class="attributes"><code>
+				 public static
+				boolean/object
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_user">#</a>
+			<code><a href="source-class-Core_Helper_Auth.html#155-202" title="Go to source code">user</a>( <span>string <var>$key</var> = <span class="php-keyword1">NULL</span></span>, <span>object <var>$value</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+			<div class="description short">
+				
+<p>get and set user information in the session</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>get and set user information in the session</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$key</var></dt>
+						<dd><code>string</code><br>$key the key you want to get or set</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>object</code><br>$value the value you want to set</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean/object</code><br>the key you got or set<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="controllers" id="$controllers">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Helper_Auth.html#18-27" title="Go to source code"><var>$controllers</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$controllers" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>controllers: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>controllers: array</p>
+
+<p>all the allow controllers</p>
+
+<p>an array of strings that holds controllers that are always allowed</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="actions" id="$actions">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Helper_Auth.html#30-39" title="Go to source code"><var>$actions</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$actions" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>actions: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>actions: array</p>
+
+<p>all the allowd actions</p>
+
+<p>an array of strings that holds actions that are allowed for all
+controllers</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

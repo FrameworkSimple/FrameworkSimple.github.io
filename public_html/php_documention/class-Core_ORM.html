@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_ORM | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Controller.html">Core_Controller</a></li>
+				<li><a href="class-Core_Core.html">Core_Core</a></li>
+				<li><a href="class-Core_Database.html">Core_Database</a></li>
+				<li><a href="class-Core_Debug.html">Core_Debug</a></li>
+				<li><a href="class-Core_Model.html">Core_Model</a></li>
+				<li class="active"><a href="class-Core_ORM.html">Core_ORM</a></li>
+				<li><a href="class-Core_Validation.html">Core_Validation</a></li>
+			</ul>
+
+
+
+
+			<h3>Constants</h3>
+			<ul>
+				<li><a href="constant-AJAX_RETURN_TYPE.html">AJAX_RETURN_TYPE</a></li>
+				<li><a href="constant-AUTH.html">AUTH</a></li>
+				<li><a href="constant-AUTH_PASSWORD_FIELD.html">AUTH_PASSWORD_FIELD</a></li>
+				<li><a href="constant-AUTH_REDIRECT_ACTION.html">AUTH_REDIRECT_ACTION</a></li>
+				<li><a href="constant-AUTH_REDIRECT_CONTROLLER.html">AUTH_REDIRECT_CONTROLLER</a></li>
+				<li><a href="constant-AUTH_TABLE.html">AUTH_TABLE</a></li>
+				<li><a href="constant-AUTH_USERNAME_FIELD.html">AUTH_USERNAME_FIELD</a></li>
+				<li><a href="constant-AUTO_RENDER.html">AUTO_RENDER</a></li>
+				<li><a href="constant-DB_HOSTNAME.html">DB_HOSTNAME</a></li>
+				<li><a href="constant-DB_NAME.html">DB_NAME</a></li>
+				<li><a href="constant-DB_PASSWORD.html">DB_PASSWORD</a></li>
+				<li><a href="constant-DB_USERNAME.html">DB_USERNAME</a></li>
+				<li><a href="constant-DEBUG.html">DEBUG</a></li>
+				<li><a href="constant-DEFAULT_ACTION.html">DEFAULT_ACTION</a></li>
+				<li><a href="constant-DEFAULT_CONTROLLER.html">DEFAULT_CONTROLLER</a></li>
+				<li><a href="constant-DEFAULT_LAYOUT.html">DEFAULT_LAYOUT</a></li>
+				<li><a href="constant-DEFAULT_VIEW_TYPE.html">DEFAULT_VIEW_TYPE</a></li>
+				<li><a href="constant-LAYOUTS.html">LAYOUTS</a></li>
+				<li><a href="constant-REST.html">REST</a></li>
+				<li><a href="constant-SALT.html">SALT</a></li>
+				<li><a href="constant-SESSION.html">SESSION</a></li>
+				<li><a href="constant-TITLE.html">TITLE</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_ORM</h1>
+
+
+	<div class="description">
+	
+<p>This is the ORM. It allows you to use Object Relational Mapping to call find,
+save, and delete</p>
+
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+Database
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>Core_ORM</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a><br>
+
+				<b>Category:</b>
+				Core<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+				<b>Extends:</b>
+				Database<br>
+		<b>Located at</b> <a href="source-class-Core_ORM.html#6-994" title="Go to source code">system/Core/ORM.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="_call" id="__call">
+
+			<td class="attributes"><code>
+				 public 
+				object
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__call">#</a>
+			<code><a href="source-class-Core_ORM.html#76-151" title="Go to source code">_call</a>( <span>string <var>$method</var></span>, <span>object <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+<p>This is called whenever a call is made on this model</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>This is called whenever a call is made on this model</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$method</var></dt>
+						<dd><code>string</code><br>$method the method that was called</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>object</code><br>$value the params that were passed</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>object</code><br>the response we got from the database<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_find" id="__find">
+
+			<td class="attributes"><code>
+				 private 
+				object
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__find">#</a>
+			<code><a href="source-class-Core_ORM.html#153-396" title="Go to source code">_find</a>( )</code>
+
+			<div class="description short">
+				
+<p>searchs the database for information</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>searchs the database for information</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>object</code><br>the response from the database<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_save" id="__save">
+
+			<td class="attributes"><code>
+				 private 
+				object
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__save">#</a>
+			<code><a href="source-class-Core_ORM.html#398-581" title="Go to source code">_save</a>( )</code>
+
+			<div class="description short">
+				
+<p>save information to the database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>save information to the database</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>object</code><br>the id or the saved result<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_delete" id="__delete">
+
+			<td class="attributes"><code>
+				 private 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__delete">#</a>
+			<code><a href="source-class-Core_ORM.html#583-655" title="Go to source code">_delete</a>( <span>integer <var>$id</var></span> )</code>
+
+			<div class="description short">
+				
+<p>delete information from the database</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>delete information from the database</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$id</var></dt>
+						<dd><code>integer</code><br>$id the id you want to be deleted</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_createselect" id="__createselect">
+
+			<td class="attributes"><code>
+				 private 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__createselect">#</a>
+			<code><a href="source-class-Core_ORM.html#657-710" title="Go to source code">_createselect</a>( )</code>
+
+			<div class="description short">
+				
+<p>create the select statement with all the fields</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create the select statement with all the fields</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the select statement<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_settable" id="__settable">
+
+			<td class="attributes"><code>
+				 private 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__settable">#</a>
+			<code><a href="source-class-Core_ORM.html#713-774" title="Go to source code">_settable</a>( <span>string <var>$table</var></span> )</code>
+
+			<div class="description short">
+				
+<p>set the table structure in the $_tables</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>set the table structure in the $_tables</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$table</var></dt>
+						<dd><code>string</code><br>$table the table we need to set up</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_setjoins" id="__setjoins">
+
+			<td class="attributes"><code>
+				 private 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__setjoins">#</a>
+			<code><a href="source-class-Core_ORM.html#777-814" title="Go to source code">_setjoins</a>( )</code>
+
+			<div class="description short">
+				
+<p>set up all the joins in the options</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>set up all the joins in the options</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_createjoins" id="__createjoins">
+
+			<td class="attributes"><code>
+				 private 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__createjoins">#</a>
+			<code><a href="source-class-Core_ORM.html#816-890" title="Go to source code">_createjoins</a>( )</code>
+
+			<div class="description short">
+				
+<p>create all the join statements</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create all the join statements</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the join statement<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_createwhere" id="__createwhere">
+
+			<td class="attributes"><code>
+				 private 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__createwhere">#</a>
+			<code><a href="source-class-Core_ORM.html#892-936" title="Go to source code">_createwhere</a>( )</code>
+
+			<div class="description short">
+				
+<p>create the where statement</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create the where statement</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the where statement<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_createlimit" id="__createlimit">
+
+			<td class="attributes"><code>
+				 private 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__createlimit">#</a>
+			<code><a href="source-class-Core_ORM.html#938-956" title="Go to source code">_createlimit</a>( )</code>
+
+			<div class="description short">
+				
+<p>create a limit statement if needed</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create a limit statement if needed</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the limit statement<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_createorder" id="__createorder">
+
+			<td class="attributes"><code>
+				 private 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__createorder">#</a>
+			<code><a href="source-class-Core_ORM.html#958-993" title="Go to source code">_createorder</a>( )</code>
+
+			<div class="description short">
+				
+<p>create the order by statement</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>create the order by statement</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the order by statement<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="options" id="$options">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#18-22" title="Go to source code"><var>$options</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$options" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>The options you want to use for this call</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>The options you want to use for this call</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="_defaultOptions" id="$_defaultOptions">
+			<td class="attributes"><code>
+				private  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#24-39" title="Go to source code"><var>$_defaultOptions</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$_defaultOptions" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>The default options that will be overwritten by $options</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>The default options that will be overwritten by $options</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="_name" id="$_name">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#40-44" title="Go to source code"><var>$_name</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$_name" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>the name of this model</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>the name of this model</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="_tables" id="$_tables">
+			<td class="attributes"><code>
+				private  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#46-50" title="Go to source code"><var>$_tables</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$_tables" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>An array of all the tables we are using with their columns</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>An array of all the tables we are using with their columns</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="_data" id="$_data">
+			<td class="attributes"><code>
+				private  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#52-56" title="Go to source code"><var>$_data</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$_data" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>The data we will be using for the call</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>The data we will be using for the call</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="recursive" id="$recursive">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_ORM.html#58-74" title="Go to source code"><var>$recursive</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$recursive" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>What tables to associate with</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>What tables to associate with</p>
+
+
+						<h4>Example</h4>
+						<div class="list">
+								// Only associate to this table<br />
+$this-&gt;ModalName-&gt;recursive = 0;<br />
+<br />
+// Associate with belongs_to Tables<br />
+$this-&gt;ModalName-&gt;recursive = 1;<br />
+<br />
+// Associate with has_many Tables<br />
+$this-&gt;ModalName-&gt;recursive = 2;<br />
+<br />
+// Associate with belongs_to and has_many Tables<br />
+$this-&gt;ModalName-&gt;recursive = 3;<br />
+<br>
+						</div>
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

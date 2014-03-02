@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Controller | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.html" title="Summary of Core"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-Core_Controller.html">Core_Controller</a></li>
+				<li><a href="class-Core_Core.html">Core_Core</a></li>
+				<li><a href="class-Core_Database.html">Core_Database</a></li>
+				<li><a href="class-Core_Debug.html">Core_Debug</a></li>
+				<li><a href="class-Core_Model.html">Core_Model</a></li>
+				<li><a href="class-Core_ORM.html">Core_ORM</a></li>
+				<li><a href="class-Core_Validation.html">Core_Validation</a></li>
+			</ul>
+
+
+
+
+			<h3>Constants</h3>
+			<ul>
+				<li><a href="constant-AJAX_RETURN_TYPE.html">AJAX_RETURN_TYPE</a></li>
+				<li><a href="constant-AUTH.html">AUTH</a></li>
+				<li><a href="constant-AUTH_PASSWORD_FIELD.html">AUTH_PASSWORD_FIELD</a></li>
+				<li><a href="constant-AUTH_REDIRECT_ACTION.html">AUTH_REDIRECT_ACTION</a></li>
+				<li><a href="constant-AUTH_REDIRECT_CONTROLLER.html">AUTH_REDIRECT_CONTROLLER</a></li>
+				<li><a href="constant-AUTH_TABLE.html">AUTH_TABLE</a></li>
+				<li><a href="constant-AUTH_USERNAME_FIELD.html">AUTH_USERNAME_FIELD</a></li>
+				<li><a href="constant-AUTO_RENDER.html">AUTO_RENDER</a></li>
+				<li><a href="constant-DB_HOSTNAME.html">DB_HOSTNAME</a></li>
+				<li><a href="constant-DB_NAME.html">DB_NAME</a></li>
+				<li><a href="constant-DB_PASSWORD.html">DB_PASSWORD</a></li>
+				<li><a href="constant-DB_USERNAME.html">DB_USERNAME</a></li>
+				<li><a href="constant-DEBUG.html">DEBUG</a></li>
+				<li><a href="constant-DEFAULT_ACTION.html">DEFAULT_ACTION</a></li>
+				<li><a href="constant-DEFAULT_CONTROLLER.html">DEFAULT_CONTROLLER</a></li>
+				<li><a href="constant-DEFAULT_LAYOUT.html">DEFAULT_LAYOUT</a></li>
+				<li><a href="constant-DEFAULT_VIEW_TYPE.html">DEFAULT_VIEW_TYPE</a></li>
+				<li><a href="constant-LAYOUTS.html">LAYOUTS</a></li>
+				<li><a href="constant-REST.html">REST</a></li>
+				<li><a href="constant-SALT.html">SALT</a></li>
+				<li><a href="constant-SESSION.html">SESSION</a></li>
+				<li><a href="constant-TITLE.html">TITLE</a></li>
+			</ul>
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Controller</h1>
+
+
+	<div class="description">
+	
+<p>The basic controller</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		<b>Abstract</b><br>
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a><br>
+
+				<b>Category:</b>
+				Core<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Controller.html#6-201" title="Go to source code">system/Core/Controller.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="init" id="_init">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_init">#</a>
+			<code><a href="source-class-Core_Controller.html#108-123" title="Go to source code">init</a>( )</code>
+
+			<div class="description short">
+				
+<p>set up this controller with hooks and names</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>set up this controller with hooks and names</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="layoutData" id="_layoutData">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_layoutData">#</a>
+			<code><a href="source-class-Core_Controller.html#124-134" title="Go to source code">layoutData</a>( <span>string <var>$name</var></span>, <span>object <var>$data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>setter for layout infomation</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>setter for layout infomation</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name the key of the information</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>object</code><br>$data the data for this key</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="viewData" id="_viewData">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_viewData">#</a>
+			<code><a href="source-class-Core_Controller.html#136-144" title="Go to source code">viewData</a>( <span>string <var>$name</var></span>, <span>object <var>$data</var></span> )</code>
+
+			<div class="description short">
+				
+<p>setter for view infomation</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>setter for view infomation</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name the key of the information</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>object</code><br>$data the data for this key</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="loadmodel" id="_loadmodel">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_loadmodel">#</a>
+			<code><a href="source-class-Core_Controller.html#146-157" title="Go to source code">loadmodel</a>( <span>string <var>$name</var></span> )</code>
+
+			<div class="description short">
+				
+<p>instantiate a model</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>instantiate a model</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br>$name model name</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="beforeAction" id="_beforeAction">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_beforeAction">#</a>
+			<code><a href="source-class-Core_Controller.html#159-176" title="Go to source code">beforeAction</a>( )</code>
+
+			<div class="description short">
+				
+<p>run this before any action</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>run this before any action</p>
+
+<p>check if the person should be on this page</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="afterAction" id="_afterAction">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_afterAction">#</a>
+			<code><a href="source-class-Core_Controller.html#178-192" title="Go to source code">afterAction</a>( )</code>
+
+			<div class="description short">
+				
+<p>run this after any action</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>run this after any action</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="beforeRender" id="_beforeRender">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_beforeRender">#</a>
+			<code><a href="source-class-Core_Controller.html#194-200" title="Go to source code">beforeRender</a>( )</code>
+
+			<div class="description short">
+				
+<p>run before view is rendered</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>run before view is rendered</p>
+
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="controller" id="$controller">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#17-24" title="Go to source code"><var>$controller</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$controller" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>controller: string</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>controller: string</p>
+
+<p>the name of the controller with "Controller" on the end</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="controller_name" id="$controller_name">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#26-33" title="Go to source code"><var>$controller_name</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$controller_name" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>controller_name: string</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>controller_name: string</p>
+
+<p>name of this controller without "Controller" on the end</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="view_name" id="$view_name">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#35-42" title="Go to source code"><var>$view_name</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$view_name" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>view_name: string</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>view_name: string</p>
+
+<p>the name of the view to show</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="path_to_views" id="$path_to_views">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#44-51" title="Go to source code"><var>$path_to_views</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$path_to_views" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>path_to_views: string</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>path_to_views: string</p>
+
+<p>the path to where the views are stored</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="layout" id="$layout">
+			<td class="attributes"><code>
+				public static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#53-60" title="Go to source code"><var>$layout</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$layout" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>layout: string</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>layout: string</p>
+
+<p>the name of the layout to use</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="layout_info" id="$layout_info">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#62-69" title="Go to source code"><var>$layout_info</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$layout_info" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>layout_info: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>layout_info: array</p>
+
+<p>information to pass to the layout</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="view_info" id="$view_info">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#71-78" title="Go to source code"><var>$view_info</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$view_info" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>view_info: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>view_info: array</p>
+
+<p>information to pass to the view</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="request" id="$request">
+			<td class="attributes"><code>
+				public  
+				[type]
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#80-87" title="Go to source code"><var>$request</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$request" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>request: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>request: array</p>
+
+<p>the request information that was sent</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="success" id="$success">
+			<td class="attributes"><code>
+				public static 
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#89-96" title="Go to source code"><var>$success</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$success" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>success: boolean</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>success: boolean</p>
+
+<p>if the action was completed successfully</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="allowed_actions" id="$allowed_actions">
+			<td class="attributes"><code>
+				public static 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-Core_Controller.html#98-105" title="Go to source code"><var>$allowed_actions</var></a>
+			</td>
+			<td class="description"><div>
+				<a href="#$allowed_actions" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>allowed_actions: array</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>allowed_actions: array</p>
+
+<p>all the actions you want to be allowed for this controller</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>

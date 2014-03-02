@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Class Core_Helper_View | Framework Simple PHP Documentation</title>
+
+	<script type="text/javascript" src="resources/combined.js?478167765"></script>
+	<script type="text/javascript" src="elementlist.js?3023113376"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.min.css?260161822">
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2015443609">
+
+</head>
+
+<body>
+	<div id="navigation" class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="index.html" class="brand">Framework Simple PHP Documentation</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="package-Core.Helpers.html" title="Summary of Core\Helpers"><span>Package</span></a>
+						</li>
+						<li class="active">
+<span>Class</span>						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+						</li>
+
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
+	<div id="menu">
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="">
+			<input type="hidden" name="ie" value="UTF-8">
+			<input type="text" name="q" class="search-query" placeholder="Search">
+		</form>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li class="active"><a href="package-Core.html">Core<span></span></a>
+						<ul>
+				<li class="active"><a href="package-Core.Helpers.html">Helpers</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Extensions.html">Extensions<span></span></a>
+						<ul>
+				<li><a href="package-Extensions.AdminPanel.html">AdminPanel</a>
+						</li>
+				<li><a href="package-Extensions.RussianDollCaching.html">RussianDollCaching</a>
+						</li>
+				<li><a href="package-Extensions.SoftDeletion.html">SoftDeletion</a>
+						</li>
+				<li><a href="package-Extensions.Testing.html">Testing</a>
+						</li>
+							</ul></li>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Core_Helper_Asset.html">Core_Helper_Asset</a></li>
+				<li><a href="class-Core_Helper_Auth.html">Core_Helper_Auth</a></li>
+				<li><a href="class-Core_Helper_Hook.html">Core_Helper_Hook</a></li>
+				<li><a href="class-Core_Helper_Session.html">Core_Helper_Session</a></li>
+				<li class="active"><a href="class-Core_Helper_View.html">Core_Helper_View</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core_Helper_View</h1>
+
+
+	<div class="description">
+	
+<p>Allows you to render views</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-Core.html">Core</a>\<a href="package-Core.Helpers.html">Helpers</a><br>
+
+				<b>Category:</b>
+				Helpers<br>
+				<b>Copyright:</b>
+				2013 Framework Simple<br>
+				<b>License:</b>
+				<a href="http://www.opensource.org/licenses/mit-license.php">MIT</a><br>
+				<b>Author:</b>
+				Rachel Higley &lt;<a
+href="mailto:me&#64;rachelhigley.com">me&#64;<!-- -->rachelhigley.com</a>&gt;<br>
+				<b>Link:</b>
+				<a href="http://rachelhigley.com/framework">http://rachelhigley.com/framework</a><br>
+		<b>Located at</b> <a href="source-class-Core_Helper_View.html#6-199" title="Go to source code">system/Core/Helper/View.php</a><br>
+	</div>
+
+
+
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="render" id="_render">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_render">#</a>
+			<code><a href="source-class-Core_Helper_View.html#20-158" title="Go to source code">render</a>( <span>string <var>$file</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Render a view</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Render a view</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd><code>string</code><br>$file file you want to render</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data data you want to be passed to the view</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>$options all the options for rendering the view: layout, layout_info, render,
+and path_to_views</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the view that was rendered<br>
+					</div>
+
+
+					<h4>Api</h4>
+					<div class="list">
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="_isAssoc" id="__isAssoc">
+
+			<td class="attributes"><code>
+				 private static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#__isAssoc">#</a>
+			<code><a href="source-class-Core_Helper_View.html#160-169" title="Go to source code">_isAssoc</a>( <span>array <var>$array</var></span> )</code>
+
+			<div class="description short">
+				
+<p>check to see if array is associative or indexed</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>check to see if array is associative or indexed</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$array</var></dt>
+						<dd><code>array</code><br>$array the array you want to check on</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>if the array is associative<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getContents" id="_getContents">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getContents">#</a>
+			<code><a href="source-class-Core_Helper_View.html#171-198" title="Go to source code">getContents</a>( <span>string <var>$filename</var></span>, <span>array <var>$data</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$root</var> = <span class="php-keyword1">NULL</span></span>, <span>string <var>$content_for_layout</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+			<div class="description short">
+				
+<p>get the contents of a file</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>get the contents of a file</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd><code>string</code><br>$filename the name of the file</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>$data the data you want the view to have</dd>
+						<dt><var>$root</var></dt>
+						<dd><code>string</code><br>$root the path to the root</dd>
+						<dt><var>$content_for_layout</var></dt>
+						<dd><code>string</code><br>$content_for_layout the string of the view if rendering a layout</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>the content of the file<br>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h3>Magic methods summary</h3>
+
+
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		Framework Simple PHP Documentation API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</body>
+</html>
