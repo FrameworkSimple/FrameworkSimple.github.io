@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Framework Simple</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Only the Files You Need" />
+    <meta name="author" content="Framework Simple">
+        <link rel="icon" href="../img/favicon-green.png" type="image/x-icon">
+        <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- LESS -->
+            <link rel="stylesheet" href="../css/daux-green.min.css">
+    </head>
+<body>
+    <!-- Docs -->
+            <a href="https://github.com/rachelhigley/Framework-Simple" target="_blank" id="github-ribbon"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+        <div class="container-fluid fluid-height wrapper">
+        <div class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <a class="brand navbar-brand pull-left" href="../">Framework Simple</a>
+                <p class="navbar-text pull-right">
+                   <a href="/php_documention">PHP Documentation</a>
+                </p>
+            </div>
+        </div>
+
+            <!-- Docs -->
+                    <a href="https://github.com/rachelhigley/Framework-Simple" target="_blank" id="github-ribbon"><img src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+                <div class="container-fluid fluid-height wrapper">
+            <div class="navbar navbar-fixed-top">
+                <div class="container-fluid">
+                    <a class="brand navbar-brand pull-left" href="../">Framework Simple</a>
+                    <p class="navbar-text pull-right">
+                       <a href="/php_documention">PHP Documentation</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row columns content">
+                <div class="left-column article-tree col-sm-3">
+                    <!-- For Mobile -->
+                    <div class="responsive-collapse">
+                        <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="sub-nav-collapse" class="sub-nav-collapse">
+                        <!-- Navigation -->
+                        <ul class="nav nav-list"><li class="open"><a href="#" class="aj-nav folder">Getting Started</a><ul class="nav nav-list"><li><a href="../Getting_Started/Installation.html">Installation</a></li><li class="open"><a href="../Getting_Started/Conventions.html">Conventions</a></li><li><a href="../Getting_Started/Generate_Settings_File.html">Generate Settings File</a></li></ul></li><li><a href="#" class="aj-nav folder">Core</a><ul class="nav nav-list"><li><a href="../Core/ORM.html">ORM</a></li><li><a href="../Core/Routes.html">Routes</a></li></ul></li><li><a href="#" class="aj-nav folder">Helpers</a><ul class="nav nav-list"><li><a href="../Helpers/Asset.html">Asset</a></li><li><a href="../Helpers/Autorization.html">Autorization</a></li><li><a href="../Helpers/Hooks.html">Hooks</a></li><li><a href="../Helpers/Sessions.html">Sessions</a></li><li><a href="../Helpers/View.html">View</a></li></ul></li><li><a href="#" class="aj-nav folder">Extensions</a><ul class="nav nav-list"><li><a href="../Extensions/AdminPanel.html">AdminPanel</a></li><li><a href="../Extensions/Soft_Deletion.html">Soft Deletion</a></li><li><a href="../Extensions/Unit_Testings.html">Unit Testings</a></li></ul></li><li><a href="#" class="aj-nav folder"> 01 Examples</a><ul class="nav nav-list"><li><a href="../_01_Examples/GitHub_Flavored_Markdown.html">GitHub Flavored Markdown</a></li><li><a href="../_01_Examples/Code_Highlighting.html">Code Highlighting</a></li></ul></li><li><a href="#" class="aj-nav folder"> 05 More Examples</a><ul class="nav nav-list"><li><a href="../_05_More_Examples/Hello_World.html">Hello World</a></li></ul></li></ul>
+                                                    <div class="well well-sidebar">
+                                <!-- Links -->
+                                                                                                <!-- Twitter -->
+                                                                    <div class="twitter">
+                                        <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:180px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=rachelhigley&amp;show_count=false"></iframe>
+                                    </div>
+                                                                    <div class="twitter">
+                                        <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:180px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=FrameworkSimple&amp;show_count=false"></iframe>
+                                    </div>
+                                                            </div>
+                                            </div>
+                </div>
+                <div class="right-column  content-area col-sm-9">
+                    <div class="content-page">
+                        <article>
+                                                            <div class="page-header">
+                                    <h1>Getting Started: Conventions</h1>
+                                                                            </h1>
+                                </div>
+                                                        <h2>Folder Names</h2>
+
+<p>All folder names should be in StudlyCaps</p>
+
+<pre><code class="language-HTML">Example: AdminPanel
+</code></pre>
+
+<h2>File Names</h2>
+
+<p>All filenames should be in StudlyCaps</p>
+
+<pre><code class="language-HTML">Example: SettingsApplication.php
+</code></pre>
+
+<h2>Class Names</h2>
+
+<p>All class names should be in StudlyCaps. Should also have the full path in the name</p>
+
+<pre><code class="language-HTML">Example: Controller_Pages
+</code></pre>
+
+<h2>Variables</h2>
+
+<p>All Variables should be lowercase with underscores for separation</p>
+
+<pre><code class="language-HTML">Example: $file_path
+</code></pre>
+
+<h2>Constant</h2>
+
+<p>All constants should be uppercase with underscores for separation</p>
+
+<pre><code class="language-HTML">Example: DEFAULT_CONTROLLER
+</code></pre>
+
+<h2>Functions</h2>
+
+<p>All functions should be camelCase</p>
+
+<pre><code class="language-HTML">Example: checkRoutes
+</code></pre>
+
+<h2>Private Variables/Properties</h2>
+
+<p>All private properties or functions should have an underscore in front of the name</p>
+
+<pre><code class="language-HTML">Example: _checkRoutes
+</code></pre>
+                                                    </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+
+    <!-- hightlight.js -->
+    <script src="../js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Navigation -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+        <script>
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='../js/jquery-1.11.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+      }
+    </script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/custom.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</body>
+</html>
